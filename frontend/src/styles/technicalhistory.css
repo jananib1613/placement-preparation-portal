@@ -1,0 +1,212 @@
+/* ===========================================
+        TECHNICAL HISTORY
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+}
+
+.technical-history-page{
+
+    min-height:100vh;
+
+    padding:50px;
+
+    background:
+    radial-gradient(circle at top left,#2563eb55,transparent 35%),
+    radial-gradient(circle at bottom right,#9333ea55,transparent 35%),
+    linear-gradient(135deg,#030712,#111827,#1e293b);
+
+}
+
+.technical-history-page h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#fff;
+
+    margin-bottom:45px;
+
+    font-weight:700;
+
+}
+
+.history-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.history-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    transition:.4s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.history-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:200px;
+
+    height:200px;
+
+    top:-90px;
+
+    right:-90px;
+
+    border-radius:50%;
+
+    background:#3b82f655;
+
+    filter:blur(40px);
+
+}
+
+.history-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 20px 50px rgba(59,130,246,.35);
+
+}
+
+.history-card h2{
+
+    color:#60a5fa;
+
+    margin-bottom:20px;
+
+    font-size:25px;
+
+}
+
+.history-card p{
+
+    color:#f1f5f9;
+
+    margin:12px 0;
+
+    font-size:17px;
+
+}
+
+.history-card strong{
+
+    color:#38bdf8;
+
+}
+
+.pass{
+
+    margin-top:25px;
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#16a34a;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.fail{
+
+    margin-top:25px;
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.no-history{
+
+    width:100%;
+
+    margin-top:100px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:600;
+
+}
+
+@media(max-width:768px){
+
+.history-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.technical-history-page{
+
+padding:25px;
+
+}
+
+.technical-history-page h1{
+
+font-size:32px;
+
+}
+
+.history-card{
+
+padding:22px;
+
+}
+
+}

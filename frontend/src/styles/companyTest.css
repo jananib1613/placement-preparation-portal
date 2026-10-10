@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#020617;
+}
+
+/* ================= MAIN PAGE ================= */
+
+.company-test{
+
+    min-height:100vh;
+    background:linear-gradient(135deg,#020617,#0f172a,#111827);
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+/* ================= TITLE ================= */
+
+.company-test h1{
+
+    font-size:38px;
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* ================= TIMER ================= */
+
+.timer{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    padding:12px 30px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    font-size:18px;
+    font-weight:600;
+
+    color:#38bdf8;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-container{
+
+    width:85%;
+    height:14px;
+
+    background:#1e293b;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+}
+
+.progress-bar{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#06b6d4,#3b82f6,#8b5cf6);
+
+    border-radius:30px;
+
+    transition:.4s;
+}
+
+/* ================= QUESTION COUNT ================= */
+
+.company-test p{
+
+    color:#cbd5e1;
+    font-size:18px;
+
+    margin-bottom:18px;
+}
+
+/* ================= QUESTION CARD ================= */
+
+.question-card{
+
+    width:900px;
+    max-width:95%;
+
+    background:rgba(255,255,255,.07);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    animation:fadeIn .4s ease;
+}
+
+.question-card h2{
+
+    font-size:25px;
+    font-weight:600;
+
+    color:white;
+
+    margin-bottom:28px;
+
+    line-height:1.6;
+}
+
+/* ================= OPTIONS ================= */
+
+.question-card label{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    width:100%;
+
+    padding:18px 20px;
+
+    margin-bottom:18px;
+
+    background:#1e293b;
+
+    border:2px solid transparent;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:17px;
+}
+
+.question-card label:hover{
+
+    background:#334155;
+
+    border-color:#38bdf8;
+
+    transform:translateY(-2px);
+}
+
+.question-card input[type="radio"]{
+
+    accent-color:#3b82f6;
+
+    transform:scale(1.3);
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:35px;
+}
+
+.buttons button{
+
+    padding:14px 40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:white;
+
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.4);
+}
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(59,130,246,.55);
+}
+
+.buttons button:disabled{
+
+    background:#475569;
+
+    cursor:not-allowed;
+
+    box-shadow:none;
+}
+
+/* ================= RESULT ================= */
+
+.result-box{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#020617,#111827);
+
+    color:white;
+}
+
+.result-box h1{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+    color:#38bdf8;
+}
+
+.result-box h2{
+
+    margin:10px 0;
+
+    font-size:24px;
+}
+
+.result-box button{
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#2563eb,#8b5cf6);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.result-box button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(59,130,246,.45);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .company-test h1{
+
+        font-size:28px;
+        text-align:center;
+
+    }
+
+    .question-card{
+
+        padding:22px;
+
+    }
+
+    .question-card h2{
+
+        font-size:20px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        width:100%;
+    }
+
+    .buttons button{
+
+        width:100%;
+    }
+
+    .progress-container{
+
+        width:100%;
+    }
+
+}

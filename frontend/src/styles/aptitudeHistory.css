@@ -1,0 +1,72 @@
+.history-page {
+
+    min-height: 100vh;
+    padding: 40px;
+    background: #0f172a;
+    color: white;
+
+}
+
+
+.history-page h1 {
+
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+
+}
+
+
+.history-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+
+.attempt-card {
+
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+
+}
+
+
+.attempt-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.attempt-card h2 {
+
+    color: #38bdf8;
+    margin-bottom: 15px;
+
+}
+
+
+.attempt-card p {
+
+    margin: 10px 0;
+    color: #cbd5e1;
+    font-size: 16px;
+
+}
+
+
+.attempt-card p:first-of-type {
+
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+
+}

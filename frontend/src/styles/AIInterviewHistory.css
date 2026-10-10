@@ -1,0 +1,40 @@
+.ai-history-page{
+
+padding:40px;
+
+color:white;
+
+}
+
+
+.ai-history-page h1{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+
+.history-card{
+
+background:rgba(255,255,255,0.08);
+
+padding:25px;
+
+border-radius:20px;
+
+margin:20px auto;
+
+max-width:600px;
+
+backdrop-filter:blur(10px);
+
+}
+
+
+.history-card p{
+
+margin:12px 0;
+
+}

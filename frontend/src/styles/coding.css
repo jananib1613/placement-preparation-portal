@@ -1,0 +1,278 @@
+/* ==========================================
+   CODING PAGE
+========================================== */
+
+.coding-page{
+    min-height:100vh;
+    padding:40px;
+
+    background:
+    radial-gradient(circle at top left,#14264e 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#1b1040 0%,transparent 35%),
+    linear-gradient(135deg,#050d1d 0%,#09162f 45%,#070b18 100%);
+
+    font-family:"Poppins",sans-serif;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.coding-header{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.coding-header h1{
+    color:#ffffff;
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.coding-header p{
+    color:#cfd8e8;
+    font-size:18px;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.coding-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:32px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.coding-card{
+    background:transparent;
+    border:none;
+    border-radius:26px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:all .35s ease;
+    position:relative;
+}
+
+.coding-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+.coding-card:active{
+
+    transform:scale(.97);
+
+}
+
+/* Buttons inside coding cards */
+
+.coding-card button {
+
+    margin: 10px 5px;
+    padding: 12px 20px;
+
+    border-radius: 10px;
+    border: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* Practice Problems Button */
+
+.coding-card button:first-of-type {
+
+    background: #38bdf8;
+
+}
+
+
+
+/* Theory MCQ Button */
+
+.coding-card button:last-of-type {
+
+    background: #a78bfa;
+
+}
+
+
+
+/* Hover effect */
+
+.coding-card button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.coding-icon{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    object-fit:cover;
+
+    transition:all .35s ease;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.45);
+
+}
+
+.coding-card:hover .coding-icon{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 25px rgba(79,140,255,.35),
+    0 15px 35px rgba(0,0,0,.55);
+
+}
+
+/* ==========================================
+   ARRAYS SPECIAL BORDER
+========================================== */
+
+.arrays-img{
+    border-radius:22px;
+    border:2px solid rgba(70,140,255,.8);
+
+    box-shadow:
+    0 0 18px rgba(70,140,255,.35),
+    0 12px 30px rgba(0,0,0,.45);
+}
+
+/* ==========================================
+   BACKTRACKING & BINARY SIZE
+========================================== */
+
+.backtracking-img{
+    transform:scale(1.12);
+}
+
+.binary-img{
+    transform:scale(1.12);
+}
+
+.coding-card:hover .backtracking-img{
+    transform:scale(1.18);
+}
+
+.coding-card:hover .binary-img{
+    transform:scale(1.18);
+}
+
+.coding-card:hover .arrays-img{
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   HIDE EXTRA TEXT
+========================================== */
+
+.coding-card h3{
+    display:none;
+}
+
+.coding-card p{
+    display:none;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.coding-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.coding-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.coding-header h1{
+font-size:42px;
+}
+
+}
+
+@media(max-width:600px){
+
+.coding-page{
+padding:20px;
+}
+
+.coding-grid{
+grid-template-columns:1fr;
+}
+
+.coding-header h1{
+font-size:34px;
+}
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#4f8cff;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#7c3aed;
+}
+.button-container{
+
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+    justify-content:center;
+    margin-top:15px;
+
+}
+
+
+.button-container button{
+
+    width:150px;
+    padding:12px;
+
+}

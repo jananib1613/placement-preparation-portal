@@ -1,0 +1,65 @@
+.history-page{
+
+    min-height:100vh;
+
+    padding:40px;
+
+    background:#050b1c;
+
+    color:white;
+
+}
+
+.history-page h1{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:40px;
+
+}
+
+.history-card{
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    backdrop-filter:blur(20px);
+
+}
+
+.history-card h3{
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+}
+
+.history-card p{
+
+    line-height:1.8;
+
+    color:#e2e8f0;
+
+    margin-bottom:15px;
+
+}
+
+.history-card span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}

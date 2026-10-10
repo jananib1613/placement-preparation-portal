@@ -1,0 +1,918 @@
+/* ==========================================
+        PREMIUM LEADERBOARD DESIGN
+========================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.leaderboard-page{
+
+    min-height:100vh;
+
+    padding:35px;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(59,130,246,.25),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(168,85,247,.25),
+        transparent 35%
+    ),
+
+    #050816;
+
+
+    color:white;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+
+
+
+/* ==========================
+        HEADER
+========================== */
+
+
+.leaderboard-title{
+
+
+    font-size:42px;
+
+    font-weight:800;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #60a5fa,
+        #c084fc
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+}
+
+
+
+.leaderboard-subtitle{
+
+
+    margin-top:10px;
+
+    color:#94a3b8;
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+/* ==========================
+        PODIUM
+========================== */
+
+
+.podium-section{
+
+
+    margin-top:40px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:flex-end;
+
+
+    gap:25px;
+
+
+}
+
+
+
+.podium-card{
+
+
+    width:250px;
+
+
+    padding:30px 25px;
+
+
+    text-align:center;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(20px);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+.podium-card:hover{
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    box-shadow:
+
+    0 25px 60px
+    rgba(59,130,246,.35);
+
+
+}
+
+
+
+
+
+.podium-rank{
+
+
+    font-size:55px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.rank-1{
+
+
+    transform:translateY(-30px);
+
+
+    border:
+
+    1px solid #facc15;
+
+
+}
+
+
+
+.rank-2{
+
+
+    border:
+
+    1px solid #94a3b8;
+
+
+}
+
+
+
+.rank-3{
+
+
+    border:
+
+    1px solid #fb923c;
+
+
+}
+
+
+
+
+.podium-card h2{
+
+
+    font-size:22px;
+
+}
+
+
+.podium-card h3{
+
+
+    margin-top:15px;
+
+    color:#60a5fa;
+
+    font-size:25px;
+
+
+}
+
+
+.podium-card p,
+.podium-card span{
+
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#cbd5e1;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+      YOUR PERFORMANCE
+========================== */
+
+
+
+.your-performance-card{
+
+
+    margin-top:40px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(59,130,246,.18),
+        rgba(168,85,247,.18)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+}
+
+
+
+
+
+.your-performance-card h2{
+
+
+    font-size:25px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.performance-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+.performance-grid div{
+
+
+    padding:22px;
+
+
+    border-radius:18px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+}
+
+
+
+
+
+.performance-grid p{
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+.performance-grid strong{
+
+
+    display:block;
+
+
+    margin-top:10px;
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+/* ==========================
+        XP BAR
+========================== */
+
+
+.xp-progress{
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+
+.xp-text{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    margin-bottom:10px;
+
+
+    color:#cbd5e1;
+
+
+}
+
+
+
+.progress-bar{
+
+
+    height:14px;
+
+
+    width:100%;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.progress-fill{
+
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #3b82f6,
+        #a855f7
+    );
+
+
+    border-radius:20px;
+
+
+    transition:1s;
+
+
+}
+
+
+
+
+
+/* ==========================
+        TABLE
+========================== */
+
+
+
+.leaderboard-table-card{
+
+
+    margin-top:40px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(20px);
+
+
+}
+
+
+
+
+.leaderboard-table-card h2{
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+table{
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+
+thead{
+
+
+    background:
+
+    rgba(59,130,246,.15);
+
+
+}
+
+
+
+
+th{
+
+
+    padding:16px;
+
+
+    color:#cbd5e1;
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+td{
+
+
+    padding:18px;
+
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.08);
+
+
+}
+
+
+
+
+
+tbody tr{
+
+
+    transition:.3s;
+
+
+}
+
+
+
+tbody tr:hover{
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+}
+
+
+
+.current-user{
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(59,130,246,.25),
+        rgba(168,85,247,.20)
+    );
+
+
+}
+
+
+
+
+
+td span{
+
+
+    margin-left:8px;
+
+
+    color:#60a5fa;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+/* ==========================
+        BADGES
+========================== */
+
+
+
+.badges-section{
+
+
+    margin-top:40px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+}
+
+
+
+
+
+.badge-container{
+
+
+    margin-top:25px;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.badge-card{
+
+
+    padding:30px;
+
+
+    text-align:center;
+
+
+    border-radius:22px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+.badge-card:hover{
+
+
+    transform:
+
+    translateY(-12px)
+    scale(1.03);
+
+
+    box-shadow:
+
+    0 20px 50px
+    rgba(168,85,247,.3);
+
+
+}
+
+
+
+
+.badge-icon{
+
+
+    font-size:50px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.badge-card h3{
+
+
+    font-size:20px;
+
+
+}
+
+
+
+.badge-card p{
+
+
+    margin-top:10px;
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+
+/* ==========================
+        LOADING
+========================== */
+
+
+.leaderboard-loading{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:#050816;
+
+
+    color:white;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+
+
+@media(max-width:1100px){
+
+
+.performance-grid{
+
+
+grid-template-columns:
+repeat(2,1fr);
+
+
+}
+
+
+
+.badge-container{
+
+
+grid-template-columns:
+1fr;
+
+
+}
+
+
+}
+
+
+
+@media(max-width:750px){
+
+
+.leaderboard-page{
+
+
+padding:20px;
+
+
+}
+
+
+
+.podium-section{
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+}
+
+
+
+.rank-1{
+
+
+transform:none;
+
+
+}
+
+
+
+.performance-grid{
+
+
+grid-template-columns:
+1fr;
+
+
+}
+
+
+
+.leaderboard-table-card{
+
+
+overflow-x:auto;
+
+
+}
+
+
+.leaderboard-title{
+
+
+font-size:32px;
+
+
+}
+
+
+
+}

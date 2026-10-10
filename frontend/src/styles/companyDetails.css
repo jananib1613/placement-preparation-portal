@@ -1,0 +1,477 @@
+/* =========================================================
+   COMPANY DETAILS - PREMIUM PLACEMENT PORTAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.company-details {
+    min-height: 100vh;
+    padding: 35px 55px 50px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.12), transparent 30%),
+        radial-gradient(circle at 90% 85%, rgba(139, 92, 246, 0.12), transparent 30%),
+        linear-gradient(135deg, #020617, #0f172a 55%, #111827);
+
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.company-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* Company Logo */
+
+.company-header img {
+    width: 105px;
+    height: 105px;
+
+    object-fit: contain;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(56, 189, 248, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.company-header img:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        0 0 35px rgba(56, 189, 248, 0.18);
+}
+
+
+/* Company Heading */
+
+.company-header h1 {
+    margin: 8px 0 8px;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #818cf8,
+        #a78bfa
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header Description */
+
+.company-header p {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   PREPARATION GRID
+========================================================= */
+
+.preparation-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   PREPARATION CARDS
+========================================================= */
+
+.prep-card {
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 23px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30, 41, 59, 0.95),
+            rgba(15, 23, 42, 0.95)
+        );
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.22);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Top Glow */
+
+.prep-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 20%;
+
+    width: 60%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #38bdf8,
+        transparent
+    );
+
+    opacity: 0.7;
+}
+
+
+/* Hover */
+
+.prep-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(56, 189, 248, 0.35);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(56, 189, 248, 0.07);
+}
+
+
+/* =========================================================
+   CARD TITLES
+========================================================= */
+
+.prep-card h2 {
+    margin: 4px 0 10px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    color: #f8fafc;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.prep-card p {
+    margin: 0 0 17px;
+
+    max-width: 270px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.prep-card button {
+    width: 155px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #0ea5e9,
+        #6366f1
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 18px rgba(59, 130, 246, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+
+.prep-card button:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 8px 22px rgba(59, 130, 246, 0.3);
+}
+
+
+.prep-card button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================================================
+   DIFFERENT CARD ACCENTS
+========================================================= */
+
+/* Aptitude */
+
+.prep-card:nth-child(1)::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #38bdf8,
+        transparent
+    );
+}
+
+
+/* Coding */
+
+.prep-card:nth-child(2)::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #8b5cf6,
+        transparent
+    );
+}
+
+
+/* Company Test */
+
+.prep-card:nth-child(3)::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #f59e0b,
+        transparent
+    );
+}
+
+
+/* Technical */
+
+.prep-card:nth-child(4)::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #22c55e,
+        transparent
+    );
+}
+
+
+/* HR */
+
+.prep-card:nth-child(5)::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ec4899,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   RESPONSIVE - LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .company-details {
+        padding: 30px;
+    }
+
+    .preparation-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 850px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .company-details {
+        padding: 25px 18px 40px;
+    }
+
+
+    .company-header {
+        margin-bottom: 28px;
+    }
+
+
+    .company-header img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .company-header h1 {
+        font-size: 30px;
+    }
+
+
+    .company-header p {
+        font-size: 14px;
+    }
+
+
+    .preparation-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+
+        gap: 16px;
+    }
+
+
+    .prep-card {
+        min-height: 175px;
+
+        padding: 20px;
+    }
+
+
+    .prep-card h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .company-details {
+        padding: 20px 12px 30px;
+    }
+
+
+    .company-header h1 {
+        font-size: 26px;
+    }
+
+
+    .company-header p {
+        font-size: 13px;
+    }
+
+
+    .prep-card {
+        min-height: 165px;
+
+        padding: 18px;
+    }
+
+
+    .prep-card h2 {
+        font-size: 18px;
+    }
+
+
+    .prep-card p {
+        font-size: 13px;
+    }
+
+
+    .prep-card button {
+        width: 140px;
+
+        height: 40px;
+
+        font-size: 13px;
+    }
+
+}

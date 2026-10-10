@@ -1,0 +1,97 @@
+.company-page{
+
+    min-height:90vh;
+    background:linear-gradient(135deg,#020617,#1e293b);
+    color:white;
+    padding:40px;
+
+}
+
+
+.company-page h1{
+
+    text-align:center;
+    font-size:34px;
+
+}
+
+
+.company-page > p{
+
+    text-align:center;
+    font-size:12px;
+
+}
+
+
+
+.company-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:40px;
+
+}
+
+
+
+.company-card{
+
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+
+}
+
+
+
+.company-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.company-logo{
+
+    width:120px;
+    height:120px;
+    margin:0 auto 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+    border-radius:20px;
+
+}
+
+
+.company-logo img{
+
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+}
+
+
+
+.company-card button{
+
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    font-weight:bold;
+    cursor:pointer;
+
+}

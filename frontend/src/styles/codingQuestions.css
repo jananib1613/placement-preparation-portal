@@ -1,0 +1,364 @@
+/* =====================================
+   PREMIUM CODING PROBLEM PAGE
+===================================== */
+
+.coding-question-page {
+
+    min-height:100vh;
+    padding:35px;
+
+    background:
+    linear-gradient(135deg,#020617,#0f172a);
+
+    color:white;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+
+/* HEADER */
+
+.coding-question-page h1 {
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:800;
+
+    margin-bottom:45px;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #c084fc
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+
+/* GRID */
+
+.question-list {
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+/* CARD */
+
+.question-card {
+
+
+    background:#111827;
+
+    border-radius:20px;
+
+    padding:25px;
+
+
+    border:1px solid rgba(255,255,255,0.08);
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    transition:.35s;
+
+
+}
+
+
+
+/* top glow line */
+
+.question-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+
+    background:linear-gradient(
+        90deg,
+        #06b6d4,
+        #8b5cf6
+    );
+
+}
+
+
+
+.question-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#38bdf8;
+
+
+    box-shadow:
+    0 15px 40px rgba(56,189,248,.25);
+
+
+}
+
+
+
+/* TITLE */
+
+
+.question-card h2 {
+
+
+    font-size:23px;
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* DESCRIPTION */
+
+
+.question-card p {
+
+
+    color:#cbd5e1;
+
+    line-height:1.5;
+
+    font-size:14px;
+
+
+}
+
+
+
+/* DIFFICULTY */
+
+
+.question-card span {
+
+
+    display:inline-block;
+
+
+    margin:15px 0;
+
+
+    padding:6px 15px;
+
+
+    border-radius:30px;
+
+
+    background:#064e3b;
+
+
+    color:#34d399;
+
+
+    font-size:13px;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+/* SAMPLE AREA */
+
+
+.question-card h4 {
+
+
+    font-size:14px;
+
+    color:#60a5fa;
+
+    margin-top:15px;
+
+
+}
+
+
+
+.question-card pre {
+
+
+    background:#020617;
+
+
+    border-radius:10px;
+
+
+    padding:12px;
+
+
+    color:#a7f3d0;
+
+
+    font-size:13px;
+
+
+    border:1px solid #1e293b;
+
+
+    max-height:70px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+/* QUESTION ID */
+
+
+.question-card p:last-of-type {
+
+
+    margin-top:15px;
+
+
+    color:#64748b;
+
+
+    font-size:12px;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.question-card button {
+
+
+    width:100%;
+
+
+    margin-top:18px;
+
+
+    padding:13px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.question-card button:hover {
+
+
+    letter-spacing:1px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(124,58,237,.4);
+
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1100px){
+
+.question-list{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:700px){
+
+.question-list{
+
+grid-template-columns:1fr;
+
+}
+
+}

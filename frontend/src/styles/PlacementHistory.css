@@ -1,0 +1,45 @@
+.history-page{
+
+    padding:40px;
+    color:white;
+
+}
+
+
+.history-page h1{
+
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+
+.history-card{
+
+    background:rgba(255,255,255,0.08);
+
+    padding:25px;
+
+    margin:20px auto;
+
+    max-width:600px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.history-card h2{
+
+    margin-bottom:15px;
+
+}
+
+
+.history-card p{
+
+    margin:10px 0;
+
+}

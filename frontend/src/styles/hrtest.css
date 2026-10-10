@@ -1,0 +1,677 @@
+/* =====================================================
+        PREMIUM COMPACT HR MOCK TEST PAGE
+        Placement Preparation Portal
+===================================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+
+body{
+    background:#020617;
+    overflow-x:hidden;
+}
+
+
+
+/* ================= MAIN PAGE ================= */
+
+
+.hr-page{
+
+    min-height:100vh;
+    padding:25px;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(56,189,248,.25),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(168,85,247,.25),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #111827
+    );
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.hr-header{
+
+
+    width:85%;
+
+    margin:auto;
+
+    padding:18px 30px;
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:22px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.45);
+
+
+}
+
+
+
+.hr-header h1{
+
+
+    font-size:27px;
+
+
+    font-weight:700;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #a78bfa
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+}
+
+
+
+
+/* TIMER */
+
+
+.hr-timer{
+
+
+    padding:10px 25px;
+
+
+    border-radius:40px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #ef4444,
+        #f97316
+    );
+
+
+    font-size:17px;
+
+
+    font-weight:700;
+
+
+    box-shadow:
+
+    0 0 25px rgba(239,68,68,.5);
+
+
+}
+
+
+
+
+/* ================= PROGRESS ================= */
+
+
+.hr-progress{
+
+
+    width:85%;
+
+
+    margin:22px auto;
+
+
+    text-align:center;
+
+
+    font-size:16px;
+
+
+    color:#cbd5e1;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.hr-progress::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    height:6px;
+
+
+    margin-top:12px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #8b5cf6
+    );
+
+
+}
+
+
+
+/* ================= QUESTION CARD ================= */
+
+
+.hr-card{
+
+
+    width:85%;
+
+
+    margin:auto;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    rgba(255,255,255,.09);
+
+
+    backdrop-filter:blur(25px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+
+    box-shadow:
+
+
+    0 20px 50px rgba(0,0,0,.5);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.hr-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+/* DIFFICULTY */
+
+
+.difficulty{
+
+
+    display:inline-block;
+
+
+    padding:7px 18px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #22c55e,
+        #14b8a6
+    );
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+/* QUESTION */
+
+
+.hr-card h2{
+
+
+    margin:20px 0;
+
+
+    font-size:22px;
+
+
+    line-height:1.5;
+
+
+    color:#f8fafc;
+
+
+}
+
+
+
+/* ANSWER BOX */
+
+
+.hr-card textarea{
+
+
+    width:100%;
+
+
+    height:150px;
+
+
+    padding:18px;
+
+
+    resize:none;
+
+
+    border-radius:18px;
+
+
+    outline:none;
+
+
+    background:
+
+    rgba(2,6,23,.85);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.hr-card textarea::placeholder{
+
+    color:#94a3b8;
+
+}
+
+
+
+.hr-card textarea:focus{
+
+
+    border-color:#38bdf8;
+
+
+    box-shadow:
+
+    0 0 20px rgba(56,189,248,.4);
+
+
+}
+
+
+
+
+
+/* ================= BUTTON AREA ================= */
+
+
+.hr-buttons{
+
+
+    width:85%;
+
+
+    margin:25px auto;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+.hr-buttons button{
+
+
+    padding:12px 28px;
+
+
+    min-width:150px;
+
+
+    border:none;
+
+
+    border-radius:40px;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    font-size:14px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.hr-buttons button:hover{
+
+
+    transform:translateY(-4px);
+
+
+}
+
+
+
+/* PREVIOUS */
+
+
+.prev-btn{
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #475569,
+        #1e293b
+    );
+
+
+}
+
+
+
+/* NEXT */
+
+
+.next-btn{
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb
+    );
+
+
+    box-shadow:
+
+    0 0 20px rgba(37,99,235,.5);
+
+
+}
+
+
+
+/* SUBMIT */
+
+
+.submit-btn{
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #22c55e,
+        #15803d
+    );
+
+
+    box-shadow:
+
+    0 0 20px rgba(34,197,94,.5);
+
+
+}
+
+
+
+
+/* HISTORY */
+
+
+.history-btn{
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #9333ea,
+        #db2777
+    );
+
+
+}
+
+
+
+
+
+button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+
+
+/* ================= LOADING ================= */
+
+
+.hr-loading{
+
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:#020617;
+
+
+    color:white;
+
+
+    font-size:25px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+    .hr-page{
+
+        padding:15px;
+
+    }
+
+
+    .hr-header{
+
+
+        width:95%;
+
+
+        flex-direction:column;
+
+
+        gap:15px;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+    .hr-header h1{
+
+        font-size:22px;
+
+    }
+
+
+
+    .hr-card{
+
+        width:95%;
+
+        padding:22px;
+
+    }
+
+
+
+    .hr-buttons{
+
+        width:95%;
+
+    }
+
+
+
+    .hr-buttons button{
+
+        width:100%;
+
+    }
+
+
+}

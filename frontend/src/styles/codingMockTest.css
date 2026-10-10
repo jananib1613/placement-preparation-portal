@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+
+body{
+    background:#020617;
+}
+
+
+/* ================= MAIN PAGE ================= */
+
+.mock-page{
+
+    min-height:100vh;
+
+    padding:30px;
+
+    background:
+    linear-gradient(135deg,#020617,#0f172a,#172554);
+
+    color:white;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.mock-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 25px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+}
+
+
+
+.mock-header h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.mock-header p{
+
+    color:#cbd5e1;
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+
+
+/* ================= TIMER ================= */
+
+
+.timer-box{
+
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #2563eb
+    );
+
+    padding:12px 22px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ================= PROGRESS ================= */
+
+
+.progress-container{
+
+    max-width:850px;
+
+    height:10px;
+
+    margin:25px auto;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+.progress-fill{
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+}
+
+
+
+/* ================= QUESTION INFO ================= */
+
+
+.question-info{
+
+    max-width:850px;
+
+    margin:15px auto;
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+
+
+/* ================= QUESTION CARD ================= */
+
+
+.question-card{
+
+    max-width:800px;
+
+    min-height:320px;
+
+    margin:20px auto;
+
+    padding:25px;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.4);
+
+}
+
+
+
+.question-card h2{
+
+    font-size:21px;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* ================= OPTIONS ================= */
+
+
+.options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:75%;
+
+    margin:auto;
+
+    padding:12px 18px;
+
+    min-height:52px;
+
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+
+.option:hover{
+
+    background:#273449;
+
+    border-color:#8b5cf6;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+/* RADIO BUTTON */
+
+.option input{
+
+    width:16px;
+
+    height:16px;
+
+    cursor:pointer;
+
+    accent-color:#8b5cf6;
+
+}
+
+
+
+
+.option span{
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+
+/* SELECTED OPTION */
+
+.option.active{
+
+    background:rgba(139,92,246,0.25);
+
+    border:2px solid #8b5cf6;
+
+}
+
+
+
+
+/* ================= QUESTION PALETTE ================= */
+
+
+.question-palette{
+
+    max-width:850px;
+
+    margin:25px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+
+.palette-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1e293b;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+
+.palette-btn.current{
+
+    background:#2563eb;
+
+}
+
+
+
+.palette-btn.answered{
+
+    background:#7c3aed;
+
+}
+
+
+
+/* ================= BUTTONS ================= */
+
+
+.navigation-buttons{
+
+    max-width:850px;
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+.prev-btn,
+.next-btn,
+.submit-btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.prev-btn{
+
+    background:#475569;
+
+}
+
+
+
+.next-btn{
+
+    background:#2563eb;
+
+}
+
+
+
+.submit-btn{
+
+    background:#ef4444;
+
+}
+
+
+
+.prev-btn:hover,
+.next-btn:hover,
+.submit-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ================= LOADING ================= */
+
+
+.loading-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#020617;
+
+    color:white;
+
+    font-size:25px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+.mock-page{
+
+    padding:15px;
+
+}
+
+
+.mock-header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.question-card{
+
+    padding:20px;
+
+}
+
+
+
+.option{
+
+    width:100%;
+
+}
+
+
+
+.navigation-buttons{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.prev-btn,
+.next-btn,
+.submit-btn{
+
+    width:100%;
+
+}
+
+
+}
+
+/* ================= RADIO BUTTON ================= */
+
+.option input{
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:18px;
+    height:18px;
+
+    border:2px solid #64748b;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+
+
+/* Selected radio circle */
+
+.option input:checked{
+
+    border-color:#8b5cf6;
+
+    background:#8b5cf6;
+
+}
+
+
+
+.option input:checked::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+
+    height:6px;
+
+    background:white;
+
+    border-radius:50%;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+.option.active{
+
+    background:rgba(139,92,246,0.15);
+
+    border:1px solid #8b5cf6;
+
+    box-shadow:0 0 15px rgba(139,92,246,0.4);
+
+}
+/* Remove unwanted green circles behind option text */
+
+.option span{
+    background:transparent !important;
+    border-radius:0 !important;
+    padding:0 !important;
+    color:white !important;
+}
+
+
+
+/* Make option clean */
+
+.option{
+    background:#1e293b !important;
+    border:1px solid #334155;
+}
+
+
+
+/* Selected option */
+
+.option.active{
+    background:rgba(139,92,246,0.15) !important;
+    border:1px solid #8b5cf6;
+}
+.question-card{
+
+    max-width:700px;
+
+    min-height:250px;
+
+    margin:15px auto;
+
+    padding:20px;
+
+    background:#111827;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.35);
+
+}
